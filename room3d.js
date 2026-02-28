@@ -203,16 +203,16 @@ function createMonitor() {
     codeScreen.position.set(0, 1.2, 0.017);
     group.add(codeScreen);
 
-    // Stand
-    const standGeo = new THREE.BoxGeometry(0.08, 0.28, 0.08);
+    // Stand — connects desk surface (0.78) to screen frame bottom (1.2 - 0.31 = 0.89)
+    const standGeo = new THREE.BoxGeometry(0.08, 0.12, 0.08);
     const standMat = createMaterial(0x222222, { metalness: 0.5 });
     const stand = new THREE.Mesh(standGeo, standMat);
-    stand.position.set(0, 0.95, 0);
+    stand.position.set(0, 0.84, 0);
     group.add(stand);
 
     const baseGeo = new THREE.CylinderGeometry(0.18, 0.2, 0.02, 16);
     const base = new THREE.Mesh(baseGeo, standMat);
-    base.position.set(0, 0.81, 0.05);
+    base.position.set(0, 0.79, 0.05);
     group.add(base);
 
     group.position.set(-0.5, 0, -2.3);
@@ -695,13 +695,6 @@ function createDecorations() {
     mug.position.set(-1.3, 0.86, -2.2);
     mug.castShadow = true;
     group.add(mug);
-
-    const handleGeo = new THREE.TorusGeometry(0.025, 0.006, 8, 12, Math.PI);
-    const handle = new THREE.Mesh(handleGeo, mugMat);
-    handle.position.set(-1.26, 0.86, -2.2);
-    handle.rotation.z = Math.PI / 2;
-    handle.rotation.y = Math.PI / 2;
-    group.add(handle);
 
     // Plant
     const potGeo = new THREE.CylinderGeometry(0.08, 0.06, 0.12, 8);
