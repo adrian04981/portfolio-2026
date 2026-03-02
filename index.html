@@ -29,6 +29,7 @@
       <ul class="nav-links" id="navLinks">
         <li><a href="#about" class="nav-link" data-section="about">Perfil</a></li>
         <li><a href="#experience" class="nav-link" data-section="experience">Experiencia</a></li>
+        <li><a href="#projects" class="nav-link" data-section="projects">Proyectos</a></li>
         <li><a href="#skills" class="nav-link" data-section="skills">Habilidades</a></li>
         <li><a href="#education" class="nav-link" data-section="education">Formación</a></li>
         <li><a href="#certifications" class="nav-link" data-section="certifications">Certificaciones</a></li>
@@ -304,11 +305,135 @@
     </div>
   </section>
 
-  <!-- Skills Section -->
-  <section class="section" id="skills">
+  <!-- Projects Section -->
+  <section class="section" id="projects">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">03 — Competencias</span>
+        <span class="section-tag">03 — Proyectos</span>
+        <h2 class="section-title reveal-text">Proyectos Destacados</h2>
+        <p class="section-subtitle reveal-up">Aplicaciones diseñadas y desarrolladas de principio a fin.</p>
+      </div>
+      <div class="projects-grid">
+
+        <!-- AraMedic -->
+        <div class="project-card glass-card reveal-up">
+          <div class="project-gallery" data-project="aramedic">
+            <div class="gallery-track">
+              <img src="/textures/PRJ1_1.png" alt="AraMedic Screenshot 1" class="gallery-slide active" />
+              <img src="/textures/PRJ1_2.png" alt="AraMedic Screenshot 2" class="gallery-slide" />
+              <img src="/textures/PRJ1_3.png" alt="AraMedic Screenshot 3" class="gallery-slide" />
+              <img src="/textures/PRJ1_4.png" alt="AraMedic Screenshot 4" class="gallery-slide" />
+            </div>
+            <div class="gallery-dots">
+              <button class="gallery-dot active" data-index="0"></button>
+              <button class="gallery-dot" data-index="1"></button>
+              <button class="gallery-dot" data-index="2"></button>
+              <button class="gallery-dot" data-index="3"></button>
+            </div>
+            <button class="gallery-arrow gallery-prev" aria-label="Anterior">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M15 18l-6-6 6-6" />
+              </svg>
+            </button>
+            <button class="gallery-arrow gallery-next" aria-label="Siguiente">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 18l6-6-6-6" />
+              </svg>
+            </button>
+          </div>
+          <div class="project-info">
+            <div class="project-label">
+              <span class="project-type">Aplicación Web Full-Stack</span>
+            </div>
+            <h3 class="project-name">AraMedic — Portal Médico</h3>
+            <p class="project-desc">
+              Sistema de gestión médica para la Clínica AraMedic. Incluye portal de pacientes, agendamiento de citas,
+              programación de cirugías, gestión de personal médico y panel administrativo con roles (Administrador,
+              Jefe Médico, Médico, Recepcionista). Demo disponible con credenciales y accesos rápidos.
+            </p>
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">Firebase</span>
+              <span class="tag">Chatbot IA</span>
+              <span class="tag">Roles</span>
+              <span class="tag">Dashboard</span>
+            </div>
+            <div class="project-links">
+              <a href="https://aramedic.netlify.app/" target="_blank" rel="noopener" class="project-link-btn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10" />
+                  <line x1="2" y1="12" x2="22" y2="12" />
+                  <path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z" />
+                </svg>
+                <span>Ver Demo</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Chupeñal -->
+        <div class="project-card glass-card reveal-up">
+          <div class="project-gallery" data-project="chupenal">
+            <div class="gallery-track">
+              <img src="/textures/PRJ2_1.png" alt="Chupeñal Screenshot 1" class="gallery-slide active" />
+              <img src="/textures/PRJ2_2.png" alt="Chupeñal Screenshot 2" class="gallery-slide" />
+              <img src="/textures/PRJ2_3.png" alt="Chupeñal Screenshot 3" class="gallery-slide" />
+              <img src="/textures/PRJ2_4.png" alt="Chupeñal Screenshot 4" class="gallery-slide" />
+            </div>
+            <div class="gallery-dots">
+              <button class="gallery-dot active" data-index="0"></button>
+              <button class="gallery-dot" data-index="1"></button>
+              <button class="gallery-dot" data-index="2"></button>
+              <button class="gallery-dot" data-index="3"></button>
+            </div>
+            <button class="gallery-arrow gallery-prev" aria-label="Anterior">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M15 18l-6-6 6-6" />
+              </svg>
+            </button>
+            <button class="gallery-arrow gallery-next" aria-label="Siguiente">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 18l6-6-6-6" />
+              </svg>
+            </button>
+          </div>
+          <div class="project-info">
+            <div class="project-label">
+              <span class="project-type">Aplicación Web</span>
+            </div>
+            <h3 class="project-name">Chupeñal — Juegos de Fiesta</h3>
+            <p class="project-desc">
+              Plataforma web de juegos para fiestas y reuniones sociales. Incluye modos como "Yo Nunca..." y
+              "Juego de Cartas" con interfaz colorida y divertida, diseñada para jugarse desde el celular.
+            </p>
+            <div class="project-tags">
+              <span class="tag">JavaScript</span>
+              <span class="tag">HTML/CSS</span>
+              <span class="tag">Mobile-First</span>
+              <span class="tag">Party Games</span>
+            </div>
+            <div class="project-links">
+              <a href="https://chupi-senal.netlify.app/" target="_blank" rel="noopener" class="project-link-btn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10" />
+                  <line x1="2" y1="12" x2="22" y2="12" />
+                  <path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z" />
+                </svg>
+                <span>Ver Demo</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section section-dark" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">04 — Competencias</span>
         <h2 class="section-title reveal-text">Habilidades Técnicas</h2>
       </div>
       <div class="skills-grid">
@@ -504,7 +629,7 @@
   <section class="section section-dark" id="education">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">04 — Educación</span>
+        <span class="section-tag">05 — Educación</span>
         <h2 class="section-title reveal-text">Formación Académica</h2>
       </div>
       <div class="education-card glass-card reveal-up">
@@ -551,7 +676,7 @@
   <section class="section" id="certifications">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">05 — Credenciales</span>
+        <span class="section-tag">06 — Credenciales</span>
         <h2 class="section-title reveal-text">Certificaciones & Cursos</h2>
       </div>
       <div class="certs-grid">
@@ -674,7 +799,7 @@
   <section class="section section-dark" id="contact">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">06 — Contacto</span>
+        <span class="section-tag">07 — Contacto</span>
         <h2 class="section-title reveal-text">Hablemos</h2>
         <p class="section-subtitle reveal-up">¿Tienes un proyecto o una oportunidad? No dudes en contactarme.</p>
       </div>

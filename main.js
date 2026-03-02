@@ -461,6 +461,33 @@ function init3DRoomModal() {
 }
 
 /* ============================================
+   PROJECT GALLERIES
+   ============================================ */
+function initProjectGalleries() {
+  document.querySelectorAll('.project-gallery').forEach(gallery => {
+    const slides = gallery.querySelectorAll('.gallery-slide');
+    const dots = gallery.querySelectorAll('.gallery-dot');
+    const prevBtn = gallery.querySelector('.gallery-prev');
+    const nextBtn = gallery.querySelector('.gallery-next');
+    let current = 0;
+
+    function goTo(index) {
+      slides[current].classList.remove('active');
+      dots[current].classList.remove('active');
+      current = (index + slides.length) % slides.length;
+      slides[current].classList.add('active');
+      dots[current].classList.add('active');
+    }
+
+    prevBtn?.addEventListener('click', () => goTo(current - 1));
+    nextBtn?.addEventListener('click', () => goTo(current + 1));
+    dots.forEach(dot => {
+      dot.addEventListener('click', () => goTo(parseInt(dot.dataset.index)));
+    });
+  });
+}
+
+/* ============================================
    INITIALIZE
    ============================================ */
 document.addEventListener('DOMContentLoaded', () => {
@@ -474,4 +501,5 @@ document.addEventListener('DOMContentLoaded', () => {
   initTimelineFill();
   initMagneticButtons();
   init3DRoomModal();
+  initProjectGalleries();
 });
